@@ -1,0 +1,220 @@
+
+.contBody{
+	padding-bottom: 20vmin;
+}
+
+
+.bodyBox {
+    position: relative;
+    height: 98vmax;
+    width: 96.78vmin;
+    min-width: 300px;
+    /* min-height: 98vh; */
+    /* height: 159vmin; */
+    margin: 0 auto;
+    overflow: scroll;
+    background-image: -webkit-linear-gradient( 0deg, rgb(234,56,77) 0%, rgb(211,16,39) 100%);
+    margin-top: 1vmax;
+    border-radius: 2vmin;
+    /* padding-bottom: 12.1vmin; */
+}
+
+
+.imgBoxBgDiv {
+    position: relative !important;
+    height: 29.03vmin;
+    width: 100%;
+    border: 0;
+    overflow: scroll;
+    padding: 4.848vmin;
+}
+.divTitle{
+	position: relative;
+}
+.repairInfo{
+	padding: 3.63vmin 0 0 0;
+	font-size: 4vmin;
+	line-height: 6vmin;
+}
+.infoBg{
+	position: absolute;
+	width: 96.78vmin;
+	height: 100%;
+	margin-left: -4vmin;
+	
+	background-color: white;
+	opacity: 0.1;
+}
+.jinduInfoBg{
+	position: absolute;
+	width: 96.78vmin;
+	height: 100%;
+	top: 0;
+	background-color: white;
+	opacity: 0.1;
+}
+.imgBox {
+    border: 0 !important;
+}
+.repairTime{
+	margin-left: 2.4vmin;
+}
+.imgDivBox {
+    height: auto !important;
+}
+.timeBox{
+	font-size: 3.63vmin;
+	color: #e6e6e6;
+	padding: 4vmin;
+	line-height: 5.4vmin;
+}
+.jinduTitle{
+	padding: 4vmin;
+	font-size: 4vmin;
+}
+.jinduLi{
+	position: relative;
+	border-top: 1px solid #CA2437;
+	border-bottom: 1px solid #CA2437;
+	margin-bottom: 3.22vmin;
+}
+.jinduInfoCont{
+	padding: 4vmin;
+}
+.jinduText{
+	font-size: 4vmin;
+	overflow: hidden;
+	line-height: 6vmin;
+}
+.jinduTime{
+    font-size: 3.63vmin;
+    color: #e6e6e6;
+}
+
+
+.bodyBoxBg{
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	/*width: 100%;*/
+	height: 100%;
+	
+	
+	    /* height: 98vmax; */
+    width: 96.78vmin;
+    min-width: 300px;
+    min-height: 98vh;
+    height: 159vmin;
+    margin: 0 auto;
+    background-image: -webkit-linear-gradient( 0deg, rgb(234,56,77) 0%, rgb(211,16,39) 100%);
+    margin-top: 1vmax;
+    border-radius: 2vmin;
+    left: 50%;
+    margin-left: -48.39vmin;
+    /* padding-bottom: 12.1vmin; */
+}
+.clearPad{
+	padding: 4vmin 0 4vmin 0;
+}
+.bodyBox{
+	background: none;
+	z-index: 3;
+}
+.SubBtn{
+	position: fixed;
+	bottom: 1vmin;
+	width: 96.78vmin;
+	 left: 50%;
+    margin-left: -48.39vmin;
+    z-index: 999;
+	
+}
+.btnBg{
+	width: 100%;
+	height: 6vmin;
+	background-color: black;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 4;
+	
+}
+.topBg{
+	width: 100%;
+	height: 1vmax;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 4;
+}
+.repairEr{
+	float: left;
+}
+.repairPn{
+	float: right;
+}
+.commentTitle{
+	text-align: center;
+	font-size: 4.838vmin;
+	padding: 4.848vmin;
+}
+.liStar{
+	/*float: left;*/
+	font-size: 4vmin;
+	background-color: pink;
+	width: 48vmin;
+	margin: 0 auto;
+}
+.commentStarBox{
+	overflow: hidden;
+}
+.contArea{
+	border-top: 1px solid #D93547;
+	border-bottom: 1px solid #D93547;
+	padding: 4vmin;
+}
+.contArea2{
+	padding: 4vmin;
+}
+.commentBtn{
+	font-size: 3.22vmin;
+	text-align: center;
+	width: 88.7vmin;
+	margin: 0 auto;
+	border: 1px solid white;
+	border-radius: 2vmin;
+	padding: 1.21vmin;
+	margin-top: 2.42vmin;
+}
+.commentCont{
+	font-size: 3.54vmin;
+	text-align: center;
+	padding: 4vmin;
+}
+.commentBoxShow{
+	display: none;
+}
+/*评价完成进度星星*/
+.oneStar{
+	width: 2.58vmin;
+	height: 2.42vmin;
+	float: left;
+	margin-right: 0.8vmin;
+	margin-top: -1.3vmin;
+}
+.imgClass{
+	width: 100%;
+	height: 100%;
+}
+.starBox{
+	margin-left: 1.6vmin;
+}
+.jinduState{
+	float: left;
+}
+.jinduStar{
+	float: left;
+	padding-top: 0.8vmin;
+	margin-left: 1.6vmin;
+}

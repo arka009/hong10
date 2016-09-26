@@ -1,0 +1,225 @@
+body{
+	font-family: "微软雅黑";
+	color: #fff;
+}
+.bodyBox{
+	position: relative;
+	width: 96.78vmin;
+	height: 100%;
+	 min-width: 300px;
+    /*min-height: 98vh;*/
+    /*height: 159vmin;*/
+	margin: 0 auto;
+    background-image: -webkit-linear-gradient( 0deg, rgb(55,196,242) 0%, rgb(42,101,222) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(55,196,242) 0%, rgb(42,101,222) 100%);
+    box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.004);
+	/*margin-top: 1vmax;*/
+	border-radius: 2vmin;
+	/*height: 98vmax;*/
+	/*padding-bottom: 12.1vmin;*/
+}
+.SubBtn{
+	position: absolute;
+	bottom: 0;
+	background-color: #22719b;
+	width: 100%;
+	left: 0;
+	text-align: center;
+	border-bottom-left-radius: 2vmin;
+	border-bottom-right-radius: 2vmin;
+	padding: 4.03vmin 0 4.03vmin 0;
+	font-size: 3.63vmin;
+}
+
+
+
+
+
+
+.contInputArea{
+	position: relative;
+	width: 100%;
+	padding-top: 2.4vmin;
+}
+
+.contInputArea2{
+	position: absolute;
+	width: 100%;
+	padding-top: 2.4vmin;
+	margin: 0 auto;
+	border: 0;
+}
+.contArea{
+	/*position: absolute;*/
+	width: 100%;
+	padding: 3vmin;
+	resize: none;
+	background: 0;
+	margin: 0 auto;
+	border: 0;
+	border-top: 1px solid #2e95d4;
+	border-bottom: 1px solid #2e95d4;
+	font-size: 4vmin;
+	line-height:6vmin ;
+	color: white;
+	
+}
+
+.contArea2{
+	/*position: absolute;*/
+	width: 100%;
+	padding: 3vmin;
+	resize: none;
+	background: white;
+	opacity: 0.1;
+	margin: 0 auto;
+	border: 0;
+	border-top: 1px solid #2e95d4;
+	border-bottom: 1px solid #2e95d4;
+	font-size: 4vmin;
+	line-height:6vmin ;
+	color: white;
+	
+}
+
+.imgDivBox{
+	position: relative;
+	height: 36vmin;
+	margin-top:  4.848vmin;
+}
+.divTitle{
+	font-size: 4vmin;
+	padding:0 0 2.822vmin 4vmin;
+}
+.imgBox{
+	position: absolute;
+	height: 29.03vmin;
+	width: 100%;
+	background-color: white;
+	opacity: 0.1;
+	border-top: 1px solid #2e95d4;
+	border-bottom: 1px solid #2e95d4;
+}
+.imgBoxBgDiv{
+	position: absolute;
+	height: 29.03vmin;
+	width: 100%;
+	border-top: 1px solid #2e95d4;
+	border-bottom: 1px solid #2e95d4;
+	overflow: scroll;
+	padding: 4.848vmin;
+	
+}
+.imgBtnBox{
+	position: relative;
+	float: left;
+	display: inline;
+	width: 23.35vmin;
+	height: 19.35vmin;
+	padding-right: 4vmin;
+}
+.imgBtn{
+	border: 1px solid #2e95d4;
+}
+.clearBor{
+	border: 0;
+}
+.imgCancel {
+    position: absolute;
+    top: -0.6vmin;
+    right: 1.4vmin;
+    width: 4vmin;
+    height: 4vmin;
+    text-align: center;
+}
+
+.imgOverBox{
+	min-width: 400vmin;
+	
+}
+.imgBnt{
+	background-color: sandybrown;
+}
+.imgClass{
+	width: 100%;
+	height: 100%;
+}
+.timeDivBox{
+	position: relative;
+	margin-top: 4vmin;
+	font-size: 4vmin;
+	padding: 3.23vmin 0 3.23vmin 4.848vmin ;
+	border-top: 1px solid #2e95d4;
+	border-bottom: 1px solid #2e95d4;
+	
+}
+.timeDivBg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	opacity: 0.1;
+	margin: -3.23vmin 0 0 -4.848vmin;
+}
+.timeLab{
+	float: left;
+	width: 25vmin;
+}
+.timeArea{
+	float: right;
+}
+.timeIcon{
+	float: right;
+	margin-right: 3vmin;
+	margin-top: -0.5vmin;
+}
+.timeBtn{
+	overflow: hidden;
+}
+.btn{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: 0;
+	border: 0;
+	margin: -3.23vmin 0 0 -4.848vmin;
+}
+.mui-dtpicker-header{
+    padding: 6px;
+    font-size: 14px;
+    color: #888;
+    background-color: #262626 !important;
+}
+.mui-dtpicker {
+    border:0 !important;
+    width: 100vmin !important;
+    min-width: 300px !important;
+    left: 50% !important;
+    margin-left: -50vmin !important;
+}
+.mui-picker {
+    background-color:  #262626 !important;
+}
+.mui-pciker-list li.highlight {
+    color: #B9B9B9 !important;
+}
+.mui-pciker-list li{
+	color: #555555 !important;
+}
+
+.mui-dtpicker-header button {
+    font-size: 4vmin !important;
+    padding: 1.21vmin 3.22vmin !important;
+   border-radius: 2vmin;
+}
+
+.cancelBtn{
+	background-color: #D41128 !important;
+	border: 0 !important;
+	color: #262626;
+}
+.contBtn{
+	background-color: #D41128 !important;
+	border: 0 !important;
+	color: white;
+}

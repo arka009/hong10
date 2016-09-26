@@ -1,0 +1,286 @@
+body{
+	font-family: "微软雅黑";
+	background-color: black;
+}
+
+.bodyBox{
+	position: relative;
+	width: 96.78vmin;
+	 min-width: 300px;
+    min-height: 98vh;
+    /*height: 159vmin;*/
+	margin: 0 auto;
+	
+	box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.004);
+	margin-top: 1vmin;
+	border-radius: 2vmin;
+	/*overflow: hidden;*/
+	/*padding-bottom: 12.1vmin;*/
+}
+
+.cardTile{
+    position: fixed;
+    color: white;
+    top: 1vmin;
+    padding: 4.838vmin 2.5vmin 2.02vmin 2.5vmin;
+    overflow: hidden;
+    border-top-left-radius: 2vmin;
+    border-top-right-radius: 2vmin;
+    margin: 0 auto;
+    background-image: -webkit-linear-gradient( 0deg, rgb(234,56,77) 0%, rgb(211,16,39) 100%);
+    /* margin-top: 1vmin; */
+    width: 91.93vmin;
+    z-index: 99;
+    /* margin: 0 auto; */
+    /* margin-left: 2.03vmin; */
+    left: 50%;
+    margin-left: -48.515vmin;
+}
+
+
+.cardTileMask{
+	  position: fixed;
+    color: white;
+    top: 0;
+    padding: 4.838vmin 2.5vmin 2.92vmin 2.5vmin;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: black;
+    width: 100%;
+    z-index: 99;
+    /* margin: 0 auto; */
+    /* margin-left: 2.03vmin; */
+    
+}
+
+
+.borderLine{
+	position: absolute;
+	width: 100%;
+	border-style: solid;
+  border-width: 0.4vmin;
+  border-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0.64;
+  left: 0;
+	bottom: 0;
+}
+
+
+.eleTitle{
+	font-size: 6.29vmin;
+	text-align: center;
+	line-height: 8.8vmin;
+	padding-top: ;
+}
+.eleDesc{
+	font-size: 4.03vmin;
+	line-height: 6vmin;
+	
+}
+.eleNum{
+	float: left;
+}
+.eleName{
+	float: right;
+	width: 72.58vmin;
+	text-align: right;
+	
+}
+.eleBodyBox{
+	position: relative;
+	width: 96.78vmin;
+	/*overflow: scroll;*/
+	margin: 0 auto;
+	margin-bottom: 1vmin;
+	  background-image: -webkit-linear-gradient( 0deg, rgb(234,56,77) 0%, rgb(211,16,39) 100%);
+}
+
+.eleSubBtn{
+    position: fixed;
+    bottom: 1vmin;
+    /* background-color: pink; */
+    width: 96.78vmin;
+    left: 50%;
+    margin-left: -48.34vmin;
+    text-align: center;
+    font-size: 3.71vmin;
+    color: white;
+    background-color: #941f2e;
+    padding: 4.03vmin 0 4.03vmin 0;
+    border-bottom-left-radius: 2vmin;
+    border-bottom-right-radius: 2vmin;
+    z-index: 99;
+}
+
+.eleSubBtnMask{
+	position: fixed;
+    bottom: 0;
+    /* background-color: pink; */
+    width: 100%;
+    text-align: center;
+    font-size: 3.71vmin;
+    background-color: black;
+    padding: 5.03vmin 0 4.03vmin 0;
+    z-index: 98;
+}
+
+
+.nameLi{
+	position: relative;
+    padding: 0 3.22vmin;
+    height: 23.39vmin;
+    width: 90.33vmin;
+    /* min-width: 300px; */
+    background-image: -webkit-linear-gradient( 0deg, rgb(234,56,77) 0%, rgb(211,16,39) 100%);
+}
+
+.nameliSelect{
+	position: relative;
+	padding:0 3.22vmin;
+	width: 91.5vmin;
+	height: 24.19vmin; 
+	z-index: 10;
+	/*min-width: 300px;*/
+	margin-left: -1.21vmin;
+	
+	
+	
+	border: 0.7vmin solid black;
+ 	border-radius: 1.61vmin; 
+ 	 background-image: -webkit-linear-gradient( 0deg, rgb(175,41,57) 0%, rgb(158,13,30) 100%);
+}
+.nameliSelect .borderLine{
+	display: none;
+}
+
+.nameLi .elePerName{
+	float: left;
+	font-size:6.04vmin;
+	color: white;
+	padding: 7.5vmin 0;
+	
+}
+.nameLi .elePerIcon{
+	float: right;
+	margin: 7.5vmin 3.22vmin 7.5vmin 0;
+	width: 5.16vmin;
+	height: ;
+	background-image: url(../../img/HomeVote/selectIcon_1.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: white;
+}
+.imgClass{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+.nameliSelect .elePerName{
+	float: left;
+	font-size:6.94vmin;
+	color: white;
+	padding: 7.5vmin 0;
+	
+}
+.nameliSelect .elePerIcon{
+	float: right;
+	margin: 8vmin 4vmin 7.5vmin 0;
+	width: 5.16vmin;
+	height: ;
+	background-image: url(../../img/HomeVote/selectIcon_2.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+
+.nameLiF{
+	position: relative;
+    padding: 0 3.22vmin;
+    height: 23.39vmin; 
+    width: 90.33vmin;
+    /* min-width: 300px; */
+    background-image: -webkit-linear-gradient( 0deg, rgb(234,56,77) 0%, rgb(211,16,39) 100%);
+}
+
+.nameLiF .borderLine{
+	/*display: none;*/
+}
+
+.nameLiF .elePerName{
+	float: left;
+	font-size:6.04vmin;
+	color: white;
+	padding: 7.5vmin 0;
+	
+}
+.nameLiF .elePerIcon{
+	float: right;
+	margin: 7.5vmin 3.22vmin 7.5vmin 0;
+	/*width: 5.16vmin;*/
+	color: white;
+	text-align: left;
+}
+
+
+
+.eleText{
+	position: relative;
+    padding: 3vmin 2.22vmin;
+    width: 92.33vmin;
+    /* min-width: 300px; */
+    background-image: -webkit-linear-gradient( 0deg, rgb(234,56,77) 0%, rgb(211,16,39) 100%);
+}
+.eleDate{
+	font-size: 3.064vmin;
+	color: white;
+}
+.eleTextContent{
+	padding: 3vmin 0;
+	font-size: 4.032vmin;
+	color: white;
+	line-height: 6.048vmin;
+}
+
+.eleFooter{
+	background-color: black;
+}
+
+
+/*弹出框*/
+.popDiv{
+	position: absolute;
+	width: 61.29vmin;
+	/*padding: 8.06vmin 0 8.06vmin 0;*/
+	height: 19.2vmin;
+	text-align: center;
+	background-color: #000000;
+	opacity: 0.5;
+	border-radius: 2vmin;
+	
+}
+.textClear{
+	position: absolute;
+	width: 61.29vmin;
+	padding: 7.5vmin 0 8vmin 0;
+	font-size: 3.23vmin;
+	height: 19.2vmin;
+	text-align: center;
+	color: white;
+	
+}
+.popMask{
+	position: fixed;
+	display: none;
+	width: 61.29vmin;
+	height: 19.2vmin;
+	z-index: 999;
+	top: 40%;
+	left: 50%;
+	margin-top: -9.6vmin;
+	margin-left: -30.65vmin;
+}

@@ -1,0 +1,326 @@
+
+body{
+	font-family: "微软雅黑";
+	font-size: 4.84vmin;
+	color: white;
+	background-color: black;
+	min-width: 300px;
+}
+
+
+.bodyBox{
+	position: relative;
+	/*height: 98vmax;*/
+	width: 96.78vmin;
+	 min-width: 300px;
+    min-height: 98vh;
+    /*height: 159vmin;*/
+	margin: 0 auto;
+	background-image: -webkit-linear-gradient( 0deg, rgb(234,56,77) 0%, rgb(211,16,39) 100%);
+	/*background-color: pink;*/
+	margin-top: 1vmax;
+	border-radius: 2vmin;
+	/*padding-bottom: 12.1vmin;*/
+}
+
+.eleSubBtn{
+    position: fixed;
+    bottom: 1vmin;
+    /* background-color: pink; */
+    width: 96.78vmin;
+    
+    left: 50%;
+    margin-left: -48.34vmin;
+    text-align: center;
+    font-size: 3.71vmin;
+    color: white;
+    background-color: #941f2e;
+    padding: 4.03vmin 0 4.03vmin 0;
+    border-bottom-left-radius: 2vmin;
+    border-bottom-right-radius: 2vmin;
+    z-index: 99;
+}
+
+.eleSubBtnMask{
+	position: fixed;
+    bottom: 0;
+    /* background-color: pink; */
+    width: 100%;
+    text-align: center;
+    font-size: 3.71vmin;
+    background-color: black;
+    padding: 5.03vmin 0 4.03vmin 0;
+    z-index: 98;
+}
+.backBgc{
+	background-color: black;
+	position: absolute;
+	bottom: -3vmin;
+	width: 100%;
+	height: 10vmin;
+	z-index:2;
+}
+.backBgcBot{
+	background-color: black;
+	position: absolute;
+	top: -3vmin;
+	width: 100%;
+	height: 10vmin;
+	z-index:2;
+}
+.backTop{
+	position: relative;
+	z-index: 1;
+	
+}
+.infoBox{
+	z-index: 5;
+	position: relative;
+	width: 100%;
+    font-size: 4.88vmin;
+	border-radius: 2vmin;
+	background-image: -webkit-linear-gradient( 0deg, rgb(234,56,77) 0%, rgb(211,16,39) 100%);
+	padding-bottom: 12.5vmin;
+	border-top: 1px dashed #A7293A;
+}
+.clearInfo{
+	border: 0;
+}
+.clearInfoBox{
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom: 0;
+}
+
+
+.inputBox{
+	width: 87.9vmin;
+	overflow: hidden;
+	padding: 4.5vmin 0.8vmin;
+	border-bottom: 1px solid #ED6C7B;
+	margin: 0 auto;
+	font-size: 4.848vmin;
+}
+
+.infoNameLab{
+	float: left;
+	font-size: 4.838vmin;
+	padding-top: 1.5vmin;
+}
+.infoNameInp{
+	float: left;
+}
+.comName{
+	padding: 5vmin 0;
+	float: inherit;
+}
+.perName{
+	float: left;
+}
+.perPhone{
+	float: right !important;
+}
+.nameWid{
+	width: 20vmin;
+}
+.comPerName{
+	overflow: hidden;
+	padding: 3vmin 0;
+}
+
+.jobWid{
+	width: 35vmin;
+	/*background-color: pink;*/
+	text-align: center;
+}
+.TextInput{
+	background: 0;
+	border: 0;
+	font-size: 4.838vmin;
+	padding: 1vmin;
+	color: white;
+}
+
+.selectBtn{
+	float: left;
+	margin-right: 4.84vmin;
+	opacity: 0.4;
+	cursor: default;
+}
+.imgBox{
+	float: left;
+	
+}
+.imgText{
+	padding-top: 0.7vmin;
+	margin-left: 1.2vmin;
+}
+.imgIcon{
+	width: 6.45vmin;
+}
+.imgClass{
+	width: 100%;
+	height: 100%;
+}
+.btnChecked{
+	opacity: 1;
+}
+.clearBor{
+	border: 0;
+}
+.BtnLabel{
+	float: left;
+	
+}
+.labPad{
+	padding-top: 1.3vmin;
+}
+.selectBox{
+	float: left;
+}
+.selectCont{
+	float: left;
+	width: 59vmin;
+	/*text-overflow: ellipsis;*/ 
+	overflow: hidden; 
+	white-space: nowrap; 
+	line-height: 5vmin;
+}
+.selectIcon{
+	float: left;
+	width:2.3vmin;
+	/*height: 4.84vmin;*/
+	
+}
+.widBox{
+	width: 69vmin;
+}
+.personType{
+	float: left;
+}
+.personFlag{
+	float: left;
+	font-size: 3.23vmin;
+	background-color: pink;
+	padding: 1.21vmin 2.02vmin;
+	border-radius: 2vmin;
+	color: #e32b41;
+	background-color: white;
+	margin-left: 4.03vmin;
+}
+
+/*身份选择框*/
+.peopleBox{
+	position: fixed;
+		width: 100vmin;
+		bottom: 0;
+		left: 50%;
+		margin-left: -50vmin;
+		background-image: -webkit-linear-gradient( 0deg, rgb(234,56,77) 0%, rgb(211,16,39) 100%);
+		border-top-left-radius: 2vmin;
+		border-top-right-radius: 2vmin;
+		z-index: 120;
+		display: none;
+		
+		/*font-size: 4.84vmin;*/
+}
+.peopleBor{
+	border-bottom: 1px solid #E04659;
+	width: 92.74vmin;
+	margin: 0 auto;
+}
+.peopleLi{
+	text-align: center;
+	padding: 4.84vmin;
+	font-size: 4vmin;
+}
+.peopleSelectBox{
+	padding: 3vmin 0;
+}
+
+
+/*地区选择框*/
+.areaBox{
+		position: fixed;
+		width: 100vmin;
+		bottom: 0;
+		left: 50%;
+		margin-left: -50vmin;
+		background-image: -webkit-linear-gradient( 0deg, rgb(234,56,77) 0%, rgb(211,16,39) 100%);
+		border-top-left-radius: 2vmin;
+		border-top-right-radius: 2vmin;
+		z-index: 120;
+		display: none;
+}
+.areaBoxMask{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 110;
+	background-color: black;
+	opacity: 0.5;
+	display: none;
+	
+}
+.areaBoxTitle{
+	text-align: center;
+	padding: 3.23vmin 0;
+}
+
+.areaBoxTab{
+	/*overflow: hidden;*/
+	width: 92.74vmin;
+	margin: 0 auto;
+	overflow: scroll;
+	white-space:nowrap;
+	border-bottom: 1px solid white;
+	padding: 0 1.5vmin;
+}
+
+
+.areaUl{
+	min-width: 300vmin;
+	
+	
+}
+.areaUl li{
+	
+	display: inline;
+	float: left;
+	padding: 2vmin 0  4vmin 0;
+	margin-right: 4.03vmin;
+	font-size: 4.838;
+	white-space: nowrap;
+	margin-bottom: -1px;
+	display: none;
+	cursor: default;
+}
+.areaUlShow{
+	display: block !important;
+}
+.selectLi{
+	border-bottom: 3px solid white
+}
+.areaBoxBody{
+	width: 92.74vmin;
+	margin: 0 auto;
+	padding:2vmin 3.23vmin;
+}
+.areaBoxBody{
+	height: 95.97vmin;
+	overflow: scroll;
+}
+.areaListUl li{
+	padding: 3.23vmin 0;
+	display: inline-block;
+	width: 100%;
+	cursor: default;
+}
+.areaBodyShow{
+	display: block !important;
+}
+.areaBodyOne{
+	display: none;
+}

@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>家园点评</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--<link href="../../css/mui.min.css" rel="stylesheet" />-->
+		<link rel="stylesheet" type="text/css" href="../../css/cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/HomeCom/CommentPage.css"/>
+	</head>
+
+	<body>
+		<div class="bodyBox">
+			
+			<div class="comTitle" id="comTitle">
+				江山赋
+			</div>
+			<div class="starBox">
+				<div class="starList">
+					<div class="starLi">
+						<div class="liName">
+							绿化养护
+						</div>
+						<div class="liStar">
+							<div class="starDiv star_1" starIndex="1" starNum="1"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv star_1" starIndex="1" starNum="2"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv star_1" starIndex="1" starNum="3"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv star_1" starIndex="1" starNum="4"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv clearStar star_1" starIndex="1" starNum="5"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+						</div>
+					</div>
+					
+					<div class="starLi">
+						<div class="liName">
+							秩序维护
+						</div>
+						<div class="liStar">
+							<div class="starDiv star_2" starIndex="2" starNum="1"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv star_2" starIndex="2" starNum="2"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv star_2" starIndex="2" starNum="3"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv star_2" starIndex="2" starNum="4"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv clearStar star_2" starIndex="2" starNum="5"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+						</div>
+					</div>
+					
+					<div class="starLi">
+						<div class="liName">
+							环境卫生
+						</div>
+						<div class="liStar">
+							<div class="starDiv star_3" starIndex="3" starNum="1"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv star_3" starIndex="3" starNum="2"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv star_3" starIndex="3" starNum="3"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv star_3" starIndex="3" starNum="4"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv clearStar star_3" starIndex="3" starNum="5"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+						</div>
+					</div>
+					
+					<div class="starLi">
+						<div class="liName">
+							设备运维
+						</div>
+						<div class="liStar">
+							<div class="starDiv star_4" starIndex="4" starNum="1"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv star_4" starIndex="4" starNum="2"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv star_4"  starIndex="4" starNum="3"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv star_4" starIndex="4" starNum="4"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv clearStar star_4" starIndex="4" starNum="5"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+						</div>
+					</div>
+					
+					<div class="starLi clearMar">
+						<div class="liName">
+							客户服务
+						</div>
+						<div class="liStar">
+							<div class="starDiv star_5" starIndex="5" starNum="1"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv star_5" starIndex="5" starNum="2"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv star_5" starIndex="5" starNum="3"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv star_5" starIndex="5" starNum="4"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+							<div class="starDiv clearStar star_5" starIndex="5" starNum="5"><img src="../../img/HomeCom/blackStar.png" class="imgClass"/></div>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+			<div class="comBox">
+				<div class="comInput"></div>
+				<div class="comTextArea">
+					<textarea id="comContent" name="" rows="4" cols="" placeholder="为了更好提高物业服务，请指出不足吧~" class="commentContent"></textarea>
+				</div>
+			</div>
+				
+			<!--<div class="SubBtn">
+				提交点评
+			</div>-->
+			
+			<div class="SubBtn" onclick="goComFinish()">
+				提交修改
+			</div>
+			
+			
+		</div>
+		
+		
+		<div class="popMask" id="popMask">
+			<div class="popDiv">
+			
+			</div>
+			<div class="textClear" id="popText">
+				<!--请完成所有评价!-->
+				您写的点评至少需要10个字！
+			</div>
+		</div>
+		
+		
+		<script src="../../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="../../js/HomeCom/CommentPage.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript">
+//			mui.init()
+		</script>
+	</body>
+
+</html>

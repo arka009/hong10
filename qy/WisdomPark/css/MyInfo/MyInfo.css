@@ -1,0 +1,112 @@
+
+.bodyBox{
+	position: relative;
+	/*height: 98vmax;*/
+	width: 96.78vmin;
+	 min-width: 300px;
+    min-height: 98vh;
+    height: auto;
+	margin: 0 auto;
+	background-image: -webkit-linear-gradient( 0deg, rgb(234,56,77) 0%, rgb(211,16,39) 100%);
+	
+	
+	background-repeat: no-repeat;
+	background-size:cover;
+	margin-top: 1vmax;
+	border-radius: 2vmin;
+	/*padding-bottom: 12.1vmin;*/
+}
+
+.SubBtn {
+    position: absolute;
+    bottom: 0;
+    background-color: #870A18;
+    width: 100%;
+    opacity: 0.6;
+    left: 0;
+    text-align: center;
+    border-bottom-left-radius: 2vmin;
+    border-bottom-right-radius: 2vmin;
+    padding: 4.03vmin 0 4.03vmin 0;
+    font-size: 3.63vmin;
+}
+.SubBtn2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /*opacity: 0.6;*/
+    left: 0;
+    text-align: center;
+    border-bottom-left-radius: 2vmin;
+    border-bottom-right-radius: 2vmin;
+    padding: 4.03vmin 0 4.03vmin 0;
+    font-size: 3.63vmin;
+}
+
+.bodyBgBox{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: url(../../img/MyInfo/userIcon.png);
+	background-size: 47.58vmin 52.42vmin;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+.infoPhone{
+	padding-top: 10.48vmin;
+	width: 88.71vmin;
+	border-bottom: 1px solid white;
+	overflow: hidden;
+	padding-bottom: 7.258vmin;
+	margin: 0 auto;
+}
+.infoName{
+	font-size: 9.68vmin;
+	padding:  4.84vmin 0  4.84vmin 2.42vmin;
+	border-bottom: 1px  dashed black;
+	width: 92.74vmin;
+	margin: 0 auto;
+}
+
+.infoIcon{
+	width: 3.23vmin;
+	float: left;
+	margin-left: 4.032vmin;
+}
+.infoPhoneNum{
+	float: left;
+	margin-left: 3.225vmin;
+	font-size: 3.87vmin;
+	padding-top: 1.2vmin;
+}
+.infoBox{
+	width: 87.9vmin;
+    font-size: 4.88vmin;
+	margin: 0 auto;
+}
+
+.inputBox{
+	overflow: hidden;
+	padding: 5.65vmin 0.8vmin;
+	border-bottom: 1px solid white;
+}
+
+.infoNameLab{
+	float: left;
+	font-size: 4.838vmin;
+	padding-top: 1.5vmin;
+}
+.infoNameInp{
+	float: left;
+	
+}
+
+.TextInput{
+	background: 0;
+	border: 0;
+	font-size: 4.838vmin;
+	padding: 1vmin;
+	color: white;
+}

@@ -1,0 +1,92 @@
+body{
+	font-family: "微软雅黑";
+}
+
+
+.mui-content {
+     background-color: transparent; 
+    -webkit-overflow-scrolling: touch;
+    z-index: 10;
+    /*width: 96.78vmin;*/
+	
+	min-width: 300px;
+	margin: 0 auto;
+	margin-top: 1vmax;
+	/*margin-left: 1.61%;*/
+	/*height: 99vh;*/
+   
+}
+
+.homeListDiv{
+	position: relative;
+	overflow: hidden;
+    width: 96.78vmin;
+    min-width: 300px;
+ 	
+ 	background: url(../../img/Cloud/sprit_ico2.png) no-repeat 71vmin 3vmin, -webkit-linear-gradient( 0deg, rgb(55,196,242) 0%, rgb(42,101,222) 100%);
+	background-size:contain;
+	margin: 0 auto;
+	margin-top: 2vmin;
+	border-radius: 1vmin;
+	padding:2.41vmin 3.23vmin ; 
+	color: white;
+}
+
+.listIcon{
+	margin-bottom: 1vmin;
+	font-size: 4.04vmin;
+	height: 6vmin;
+	width: 99.58vmin;
+	padding-right: 12vmin;
+	white-space:nowrap;
+	overflow: hidden;
+text-overflow: ellipsis;
+	
+}
+.listIcon span{
+	font-size: 5.04vmin;
+}
+.listIcon .Address{
+	font-size: 4.04vmin;
+}
+.listTitle{
+	font-size: 7.26vmin;
+	margin-bottom: 5.24vmin;
+	line-height: 10vmin;
+	 height: 10vmin;
+	 width: 80vmin;
+    overflow: hidden;
+}
+.listDisc{
+	font-size: 4vmin;
+	height: 11.4vmax;
+	line-height: 5.4vmax;
+	margin: 4vmin  0 3vmin;
+	overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+}
+.setDiscStyle{
+	
+}
+.listDate{
+	text-align: right;
+	font-size: 2.9vmin;
+}
+.listState{
+    position: absolute;
+    width: 19.35vmin;
+    height: 19.35vmin;
+    border: 1.21vmin solid white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 6vmin;
+    top: -3.5vmin;
+    right: -3vmin;
+    padding-top: 7vmin;
+    margin-right: -10px;
+    -webkit-transform: rotate(45deg);
+    opacity: 0.5;
+}

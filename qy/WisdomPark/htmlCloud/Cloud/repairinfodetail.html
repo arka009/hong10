@@ -1,0 +1,355 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>报修信息-详情</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/Cloud/cloud.css" />
+    <link rel="stylesheet" href="../../css/mui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/swiper.min.css" />
+    <link rel="stylesheet" href="../../css/Cloud/addHome.css" />
+    <style type="text/css">
+     @media screen and (min-width: 700px) {
+        .wrapbox {
+            padding-bottom: 100vmin;
+        }
+        .areaBox {
+            height: 70vmin;
+        }
+    }
+    body{
+    	background: #000;
+    }
+    
+    .swiper-container {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 4vmin;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        Center slide text vertically display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    
+    .bodyBox {
+        background-image: -moz-linear-gradient( 0deg, rgb(55, 196, 242) 0%, rgb(42, 101, 222) 100%);
+        background-image: -webkit-linear-gradient( 0deg, rgb(55, 196, 242) 0%, rgb(42, 101, 222) 100%);
+        background-image: -ms-linear-gradient( 0deg, rgb(55, 196, 242) 0%, rgb(42, 101, 222) 100%);
+        min-width: 300px;
+        
+        
+    }
+    
+    .detail {
+        padding-bottom:30vmin;
+    }
+    
+    .submitted {
+        margin-bottom: 4vmin;
+    }
+    
+    .submitted p {
+        font-size: 4vmin;
+    }
+    
+    .address dd,
+    .address dt {
+        line-height: 6vmin;
+    }
+    
+    .list p {
+        font-size: 4vmin;
+    }
+    
+    .address p:first-of-type {
+        font-size: 4vmin;
+    }
+    
+    .areaListUl li {
+        color: #fff;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .areaListUl li:first-of-type {
+        padding: 0 0 3.23vmin;
+    }
+    
+    .areaBoxBody {
+        max-height: 80vmin;
+    }
+    
+    .areaListUl li {
+        height: 12vmin;
+        line-height: 12vmin;
+        color: #e1e1e1;
+        font-size: 4.838vmin;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+    
+    .areaListUl li i {
+        float: right;
+    }
+    
+    .areaListUl li.active {
+        color: #fff;
+    }
+    
+    .areaBoxBody a {
+        color: #e1e1e1;
+        font-size: 4.238vmin;
+        float: left;
+    }
+    
+    .areaBoxBody a:last-of-type {
+        float: right;
+        color: #fff;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapbox">
+        <div class="detail">
+            <div class="title">
+                <span>長大天</span>
+                <em>(业主)</em>
+                <i>18612345678</i>
+            </div>
+            <div class="list">
+                <p>5号楼3单元电梯坏了</p>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../../img/Cloud/detail_list_1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../img/Cloud/detail_list_1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../img/Cloud/detail_list_1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../img/Cloud/detail_list_1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../img/Cloud/detail_list_1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../img/Cloud/detail_list_1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../img/Cloud/detail_list_1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../img/Cloud/detail_list_1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../img/Cloud/detail_list_1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../img/Cloud/detail_list_1.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <span>期望维修时间 </span>
+                    <time>2016-10-10 14:00-15:00</time>
+                </p>
+            </div>
+            <div class="address">
+                <dl>
+                    <dt>
+                        地址：
+                    </dt>
+                    <dd>北京市房山区良乡街道江山赋9号楼2单元101</dd>
+                </dl>
+                <p style="clear: both;">
+                    时间：
+                    <time>2016-10-10 14:00</time>
+                </p>
+                <p>
+                    进度
+                </p>
+            </div>
+            <div class="loaddiv">
+                <!--<div class="submitted">
+					<dl>
+						<dt>已分配人员</dt>
+						<dd style="float: left;"><span>张三</span><em>(电梯维修)</em></dd>
+						<dd style="float: right;">18612345678</dd>
+					</dl>
+					<p style="color: #e5e5e5;clear: both;"><time>2016-10-10 14:45</time></p>
+				</div>-->
+                <div class="submitted loadson01">
+                    <p>
+                        维修单已提交
+                    </p>
+                    <p>
+                        <time>2016-10-10 14:00</time>
+                    </p>
+                </div>
+            </div>
+            <div class="footer">
+                <a href="javascript:;" id="assignment" onclick="showAreaBox()">任务指派</a>
+                <a href="repairprocess.html" id="repairprocess" style="display: none;">报修处理</a>
+            </div>
+        </div>
+        
+    </div>
+    <!--地区选择框蒙版-->
+    <div class="areaBoxMask" id="areaBoxMask" onclick="hidAreaBox(1)"></div>
+    <!--地区选择框-->
+    <div class="areaBox" id="areaBox">
+        <div class="areaBoxBody">
+            <!--省-->
+            <div class="areaBodyOne areaBodyShow" id="areaBody_1">
+                <!--<div class="noresult">
+							<p>暂无结果</p>
+							<p><a href="#">添加新公司</a></p>	
+					</div>-->
+                <p>
+                    <a href="#" id="cancel">取消</a>
+                    <a href="#" id="confirm">确认</a>
+                </p>
+                <ul class="areaListUl">
+                    <li class="active">
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                    <li>
+                        <span>张三</span>
+                        <em>(经理)</em>
+                        <i>1861345678</i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/Cloud/repairinfodetail.js"></script>
+   
+</body>
+
+</html>

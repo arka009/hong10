@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>维修详情-已分配-报修处理</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<link rel="stylesheet" href="../../css/reset.css" />
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/Cloud/RepairSub.css" />
+		<link rel="stylesheet" href="../../css/mui.picker.min.css" />
+		<style type="text/css">
+
+			body{
+				background: #000;
+			}
+			.bodyBox{
+				background-image: -moz-linear-gradient( 0deg, rgb(55,196,242) 0%, rgb(42,101,222) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(55,196,242) 0%, rgb(42,101,222) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(55,196,242) 0%, rgb(42,101,222) 100%);
+				min-width: 300px;
+				border-bottom: 4px solid #000; 
+				box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.004);
+				}
+			::-webkit-input-placeholder {   color:#fff;   }
+			textarea{
+				color: #fff;
+			}
+			.imgBtnBox img{
+				width: 100%;
+				height: 100%;
+			}
+			.imgBtn{
+				width:19vmin;
+				height: 19vmin;
+				border: 2px solid #fff;
+				overflow: hidden;
+			}
+			.imgBtnBox{
+				padding-right: 4vmin;
+				width: auto;
+				height: auto;
+			}
+			.imgBtnBox span{
+			    position: absolute;
+			    right: 2.5vmin;
+			    top: -1.3vmin;
+			    padding: 13.5px;
+			    
+				background: url(../../img/Cloud/cancelBtn.png);
+			}
+			input[type='file']{
+				width: 22vmin;
+				height: 22vmin;
+				position: absolute;
+				z-index: 2;
+				opacity: 0;
+			}
+			.addimgbtn{
+				position: relative;
+			}
+			
+			.addimgbtn em{
+				display: block;
+				width: 22vmin;
+				height: 22vmin;
+				z-index: 1;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		
+		
+		
+		<div class="bodyBox">
+			
+			<div class="contBody">
+				
+				<div class="contInputArea">
+					<textarea style="color:#fff;" class="contArea" name="" rows="5" cols="" placeholder="添加处理内容"></textarea>
+				</div>
+				
+				
+				<div class="imgDivBox">
+					<div class="divTitle">
+						添加处理照片
+					</div>
+					<div class="imgBox"></div>
+					<div class="imgBoxBgDiv">
+						<div class="imgOverBox">
+							
+						<div class="" style="padding-right: 4vmin;">
+						<div class="box">
+							<!--<div class="imgBtnBox">
+							<span class="close"></span>
+							<div class="imgBtn">
+								<img id="img1" src="../../img/detail_list_1.jpg" class="imgClass"/>
+							</div>
+							</div>-->
+							
+						</div>
+						
+						<div class="imgBtnBox">
+							<div class="imgBtn clearBor addimgbtn">
+								<input type="file" id="upload" value="" />
+								<em><img src="../../img/Cloud/addimg.PNG" /></em>
+							</div>	
+						</div>
+						
+						
+						
+						
+						
+						
+						</div>
+						
+						</div>
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+				
+			</div>
+				
+			<!--<div class="SubBtn">
+				提交点评
+			</div>-->
+			
+			
+			<div class="footer">
+					<a href="javascript:;" id="submit-rocessing" >提交处理</a>
+			</div>
+			
+		</div>
+		
+		
+	
+	
+		
+		<script src="../../js/jquery-2.1.4.min.js"></script>
+		<script src="../../js/Cloud/public.js"></script>
+		<script src="../../js/Cloud/repairprocess.js"></script>
+		<script>
+		//warrantyprocessing.html
+			
+			$("#submit-rocessing").bind("touchend", function(){
+				
+				var textArea= $(".contArea");
+				
+				if( $(textArea).val().length==0 ){
+					
+					popText("输入内容不得为空")
+				}else{
+					location.href = 'warrantyprocessing.html';
+				}
+			})
+
+		</script>
+	</body>
+</html>

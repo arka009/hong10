@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>交班</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/Cloud/addHome.css"/>
+		<style type="text/css">
+		@media screen and (min-width:700px) {
+			   
+				.peopleBox{
+					height: 70vmin;
+				}
+			}
+
+
+		.empty{
+			height: 3vmax;
+		}
+		.infoBox{
+			border-top: 1px solid #2d91d3;
+			  border-bottom: 1px solid #2d91d3;
+			padding: 0;
+			border-radius: 0;
+			 background: rgba(252, 252, 252,0.1);
+		}
+		.infoNameInp{
+			text-indent: 4vmin;
+		}
+		.inputBox{
+			width: 100%;
+			border-bottom: none;
+		}
+			.selectIcon img{
+				transform:rotate(90deg);
+				-webkit-transform:rotate(90deg);
+			}
+			.selectCont{
+				width: 85vmin;
+			}
+		</style>
+	</head>
+	<body>
+	
+		<div class="bodyBox">
+			<div class="empty"></div>
+			<div class="infoBox">
+						
+				<div class="inputBox">
+					
+					 <div class="infoNameInp">
+                       <!-- <div class="BtnLabel">选择岗位：</div>-->
+                        <div class="selectBox" onclick="showPeopleBox(0)">
+                            <div class="selectCont" id="peopleType" style="text-align: center;" >
+                             	选择走查事项
+                            </div>
+                            <div class="selectIcon">
+                                <img src="../../img/Cloud/jiantou.png" class="imgClass"/>
+                            </div>
+                        </div>
+                        
+                    </div>
+					
+				</div>
+		
+			</div>
+			<div class="footer">
+					<a href="javascript:;" id="determine">确定</a>
+			</div>
+	
+		</div>
+		
+		
+		<div class="eleSubBtnMask" id="eleSubBtn">
+			&nbsp;
+		</div>
+
+		
+		
+		
+	
+	
+		
+		
+		
+		
+		
+		
+		<!--身份选择框蒙版-->
+		<div class="areaBoxMask" id="peopleBoxMask" onclick="hidPeopleBox()"></div>
+		<!--身份选择框-->
+		<div class="peopleBox" id="peopleBox">
+			<div class="areaBoxTitle peopleBor">
+				岗位类型
+			</div>	
+			<div class="peopleSelectBox">
+				<div class="peopleLi">
+					社区物业
+				</div>
+				<div class="peopleLi">
+					物业服务
+				</div>
+				<div class="peopleLi">
+					项目经理
+				</div>
+				<div class="peopleLi">
+					项目经理
+				</div>
+				<div class="peopleLi">
+					项目经理
+				</div>
+				<div class="peopleLi">
+					项目经理
+				</div>
+				<div class="peopleLi">
+					项目经理
+				</div>
+				<div class="peopleLi">
+					项目经理
+				</div>
+				<div class="peopleLi">
+					项目经理
+				</div>
+				<div class="peopleLi">
+					项目经理
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		<script src="../../js/jquery-2.1.4.min.js"></script>
+		<script src="../../js/Cloud/public.js"></script>
+		<script src="../../js/Cloud/selectpost.js"></script>
+		<script src="../../js/Cloud/common.js"></script>
+		<script>
+			$("#determine").bind("touchend", function(){
+				if( String.prototype.Trim.call($("#peopleType").text()) != "选择走查事项" ){
+					
+				}else{
+					
+					popText('请您选择选项')
+				}
+			})
+		</script>
+	</body>
+
+</html>

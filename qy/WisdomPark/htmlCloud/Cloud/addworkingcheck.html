@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>维修详情-已分配-报修处理</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../css/reset.css" />
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/Cloud/RepairSub.css" />
+		<link rel="stylesheet" href="../../css/mui.picker.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/Cloud/addHome.css"/>
+		<style type="text/css">
+			@media screen and (min-width: 550px) {
+			   .bodyBox{
+							padding-bottom: 130vmin;
+			        		
+						}
+				.areaBox{
+					height: 70vmin;
+				}
+			}
+			body{
+				background: #000;
+			}
+			.infoBox{
+			
+			  border-bottom: 1px solid #2d91d3;
+			padding: 0;
+			border-radius: 0;
+			 background: rgba(252, 252, 252,0.1);
+		}
+		.selectCont{
+			width: 85vmin;
+		}
+		.infoNameInp{
+			text-indent: 4vmin;
+		}
+		.inputBox{
+			width: 100%;
+			border-bottom: none;
+		}
+			.selectIcon img{
+				transform:rotate(90deg);
+				-webkit-transform:rotate(90deg);
+			}
+			
+			.bodyBox{
+				  background-image: -moz-linear-gradient( 0deg, rgb(55,196,242) 0%, rgb(42,101,222) 100%);
+				  background-image: -webkit-linear-gradient( 0deg, rgb(55,196,242) 0%, rgb(42,101,222) 100%);
+				  background-image: -ms-linear-gradient( 0deg, rgb(55,196,242) 0%, rgb(42,101,222) 100%);
+					min-width: 300px;
+					border-bottom: 4px solid #000; 
+					box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.004);
+				
+				}
+			::-webkit-input-placeholder {   color:#fff;   }
+			textarea{
+				color: #fff;
+			}
+			
+			.imgBtnBox img{
+				width: 100%;
+				height: 100%;
+			}
+			.imgBtn{
+				width:19vmin;
+				height: 19vmin;
+				border: 2px solid #fff;
+				overflow: hidden;
+			}
+			.BtnLabel,.selectIcon{
+				line-height: 7vmin;
+			}
+			.imgBtnBox{
+				padding-right: 4vmin;
+				width: auto;
+				height: auto;
+			}
+			.imgBtnBox span{
+			    position: absolute;
+			    right: 2.5vmin;
+			    top: -1.3vmin;
+			    padding: 13.5px;
+			    
+				background: url(../../img/Cloud/cancelBtn.png);
+			}
+			input[type='file']{
+				width: 22vmin;
+				height: 22vmin;
+				position: absolute;
+				z-index: 2;
+				opacity: 0;
+			}
+			.addimgbtn{
+				position: relative;
+			}
+			
+			.addimgbtn em{
+				display: block;
+				width: 22vmin;
+				height: 22vmin;
+				z-index: 1;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		
+		
+		
+		<div class="bodyBox">
+			<div class="infoBox">
+                        
+                <div class="inputBox">
+                    
+                    <div class="infoNameInp">
+                       <!-- <div class="BtnLabel">选择岗位：</div>-->
+                        <div class="selectBox" onclick="showPeopleBox(0)">
+                            <div class="selectCont" id="peopleType" style="text-align: center;" >
+                             	选择走查事项
+                            </div>
+                            <div class="selectIcon">
+                                <img src="../../img/Cloud/jiantou.png" class="imgClass"/>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+        
+            </div>
+			<div class="contBody">
+				
+				<div class="contInputArea">
+					<textarea style="color:#fff;" class="contArea" name="" rows="5" cols="" placeholder="文字描述"></textarea>
+				</div>
+				
+				
+				<div class="imgDivBox">
+					<div class="divTitle">
+						添加图片
+					</div>
+					<div class="imgBox"></div>
+					<div class="imgBoxBgDiv">
+						<div class="imgOverBox">
+							
+						<div class="" style="padding-right: 4vmin;">
+						<div class="box">
+							<!--<div class="imgBtnBox">
+							<span class="close"></span>
+							<div class="imgBtn">
+								<img id="img1" src="../../img/detail_list_1.jpg" class="imgClass"/>
+							</div>
+							</div>-->
+							
+						</div>
+						
+						<div class="imgBtnBox">
+							<div class="imgBtn clearBor addimgbtn">
+								<input type="file" id="upload" value="" />
+								<em><img src="../../img/Cloud/addimg.PNG" /></em>
+							</div>	
+						</div>
+						
+						
+						
+						
+						
+						
+						</div>
+						
+						</div>
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+				
+			</div>
+				
+			<!--<div class="SubBtn">
+				提交点评
+			</div>-->
+			
+			
+			<div class="footer">
+					<a href="javascript:;" id="submit-record">提交记录</a>
+			</div>
+			
+		</div>
+		
+		
+	
+		
+		<!--地区选择框蒙版-->
+        <div class="areaBoxMask" id="areaBoxMask" onclick="hidAreaBox(1)"></div>
+        <!--地区选择框-->
+        <div class="areaBox" id="areaBox">
+            <div class="areaBoxTitle">
+                <a href="#">选择社区</a>
+                <a href="#">添加新社区</a>
+            </div>  
+            <div class="areaBoxTab">
+                <ul class="areaUl">
+                    <!--省-->
+                    <li typeCode="1" class="selectLi areaUlShow" id="areaBox_1">请选择</li>
+                    <!--市-->
+                    <li typeCode="2"  id="areaBox_2">请选择</li>
+                    <!--区-->
+                    <li typeCode="3" id="areaBox_3">请选择</li>
+                    <!--街道-->
+                    <li  typeCode="4" id="areaBox_4">请选择</li>
+                    <!--小区-->
+                    <li typeCode="5" id="areaBox_5">请选择</li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <!--身份选择框蒙版-->
+        <div class="areaBoxMask" id="peopleBoxMask" onclick="hidPeopleBox()"></div>
+        <!--身份选择框-->
+        <div class="peopleBox" id="peopleBox">
+            <div class="areaBoxTitle peopleBor">
+                岗位类型
+            </div>  
+            <div class="peopleSelectBox">
+                <div class="peopleLi">
+                    社区物业
+                </div>
+                <div class="peopleLi">
+                    物业服务
+                </div>
+                <div class="peopleLi">
+                    项目经理
+                </div>
+                <div class="peopleLi">
+                    项目经理
+                </div>
+                <div class="peopleLi">
+                    项目经理
+                </div>
+                <div class="peopleLi">
+                    项目经理
+                </div>
+                <div class="peopleLi">
+                    项目经理
+                </div>
+                <div class="peopleLi">
+                    项目经理
+                </div>
+                <div class="peopleLi">
+                    项目经理
+                </div>
+                <div class="peopleLi">
+                    项目经理
+                </div>
+                
+            </div>
+        </div>
+    
+	
+		<script src="../../js/jquery-2.1.4.min.js"></script>
+		<script src="../../js/Cloud/public.js"></script>
+		<script src="../../js/Cloud/common.js"></script>
+		<script src="../../js/Cloud/addworkingcheck.js"></script>
+		<script>
+			$("#submit-record").bind("touchend", function(){
+				var textArea= $(".contArea");
+				
+				if( String.prototype.Trim.call($("#peopleType").text()) != "选择走查事项" ){
+					location.href="workingcheckdetail.html";
+				}else if( $(textArea).val().length==0 ){
+					popText("输入内容不得为空");
+					
+				}else if($(".box").find(".imgBtnBox").length == 0){
+					popText('请上传图片');
+				}else{
+					popText('请您选择选项');
+				}
+				
+			})
+		</script>
+		
+	</body>
+</html>

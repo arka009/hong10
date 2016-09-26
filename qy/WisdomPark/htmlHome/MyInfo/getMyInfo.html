@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var userCode = "";
+			window.onload = function(){
+				getUserCode();
+			}
+		
+			//得到用户授权code
+			function getUserCode(){
+				var str = location.search;
+				var arr = str.split("?")[1];
+				var state = arr.split("&")[1].split("=")[1];
+				if(state == "success"){
+					userCode = arr.split("&")[0].split("=")[1];
+					getUserId();
+				}else{
+					
+				}
+			}
+		
+		
+			//http请求获取用户id
+			function getUserId(){
+				
+				var url = serverUrl;	//接口地址  config.js
+				var time = 60000;	//超时时间
+				
+			    var request = new XMLHttpRequest();
+			    var timeout = false;
+			    var timer = setTimeout( function(){
+			        timeout = true;
+			        request.abort();
+			    }, time );
+			    request.open( "GET", serverUrl+"/webchat/authUser.action?code="+userCode);
+			    request.onreadystatechange = function(){
+			        if( request.readyState !== 4 ) return;
+			        if( timeout ) return;
+			        clearTimeout( timer );
+			        if( request.status === 200 ){
+//			            	callback( request.responseText );
+							var obj = JSON.parse(request.responseText);
+							
+							if(obj.ownerinfoid){
+									var uId =  obj.ownerinfoid;	//用户id
+							
+									localStorage.localUserId = uId;	//用户id本地存储
+									getUserInfo();					//查询用户信息是否为空
+							}else{
+//								getUserId();
+								alert(obj.errmsg);  
+							}
+			        }
+			    }
+			    request.send( null );
+			}
+			
+			
+			//查询用户信息
+			function getUserInfo(){
+				var url = serverUrl;	//接口地址  config.js
+				var time = 60000;	//超时时间
+				
+			    var request = new XMLHttpRequest();
+			    var timeout = false;
+			    var timer = setTimeout( function(){
+			        timeout = true;
+			        request.abort();
+			    }, time );
+			    request.open( "GET", serverUrl+"/MyInfo/showDetail.action?ownerinfoid="+localStorage.localUserId );
+			    request.onreadystatechange = function(){
+			        if( request.readyState !== 4 ) return;
+			        if( timeout ) return;
+			        clearTimeout( timer );
+			        if( request.status === 200 ){
+//			            	callback( request.responseText );
+							var obj = JSON.parse(request.responseText);
+							if(obj.flag){
+								if(obj.flag == "1"){	//用户信息不为空
+									window.location.href = "MyInfo.html";
+								}else{
+									window.location.href = "ResetMyInfo.html";
+								}
+							}else{
+								alert(obj.errmsg);
+							}
+			        }
+			    }
+			    request.send( null );
+			}
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

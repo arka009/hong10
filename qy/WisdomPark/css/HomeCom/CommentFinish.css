@@ -1,0 +1,201 @@
+body{
+	background-color: black !important;
+	font-family: "微软雅黑";
+	color: white;
+}
+
+.mui-content {
+     background-color: transparent; 
+    -webkit-overflow-scrolling: touch;
+    z-index: 10;
+    /*width: 96.78vmin;*/
+	
+	min-width: 300px;
+	margin: 0 auto;
+	margin-top: 1vmax;
+	/*margin-left: 1.61%;*/
+	height: 99vh;
+   
+}
+..mui-pull{
+	color: white !important;
+}
+
+.bgDiv{
+	/*position: fixed;*/
+	/*top: 0;*/
+	/*left: 0;*/
+	
+	width: 96.78vmin;
+	
+	min-width: 300px;
+	margin: 0 auto;
+	margin-top: 1vmax;
+	/*margin-left: 1.61%;*/
+	height: 99.5vh;
+	/*height: 100%;*/
+	background-color: rgb(211, 16, 39);
+	 background-image: url(../../img/HomeCom/commentBgImg.png);
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	z-index: 1;
+	border-radius: 2vmin;
+
+	
+}
+
+.bodyBox{
+	z-index: 12;
+	position: relative;
+	width: 96.78vmin;
+	 min-width: 300px;
+    /*min-height: 98vh;*/
+    /*height: 159vmin;*/
+	margin: 0 auto;
+	
+
+	margin-top: 1vmax;
+	border-radius: 2vmin;
+}
+.comTitle{
+	text-align: center;
+	padding:  1.5vmin 4.84vmin 0 4.84vmin;
+	font-size: 5.65vmin;
+	line-height: 8.5vmin;
+}
+.comNum{
+	text-align: center;
+	margin-top: 3.63vmin;
+	font-size: 3.63vmin;
+}
+.comRes{
+
+	margin: 0 auto;
+	margin-top: 5.24vmin;
+}
+.listName{
+	
+}
+.resListPart{
+	float: left;
+	/*width: 50%;*/
+	margin-left: 31.45vmin;
+}
+.PartNum{
+	text-align: left;
+	margin-left: 13.71vmin;
+}
+.listNum{
+	
+}
+.resList{
+	overflow: hidden;
+	margin-bottom: 8.04vmin;
+	font-size: 3.55vmin;	
+	line-height: 4.2vmin;
+	
+}
+.clearResList{
+	margin-bottom: 0 !important;
+}
+.comListBox{
+	position: relative;
+	width: 92%;
+	margin: 0 auto;
+	
+}
+.resetComment{
+	position: absolute;
+	top: 4vmin;
+	right: 2vmin;
+	border: 1px solid white;
+	padding: 0.97vmin 2.18vmin 0.97vmin 2.18vmin;
+	border-radius: 1.5vmin;
+	font-size: 3.23vmin;
+}
+.myComment{
+	padding: 4vmin;
+	padding-top: 6.45vmin;
+}
+.myDate{
+	font-size: 3.64vmin;
+}
+
+.myContMar{
+	margin-top: 5.45vmin;
+	
+}
+.myCont{
+	font-size: 3vmin;
+	/*float: left;*/
+	line-height: 6vmin;
+	
+	
+	
+
+
+
+
+text-overflow: -o-ellipsis-lastline;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;
+
+}
+
+.myCont2{
+	font-size: 3vmin;
+	/*float: left;*/
+	line-height: 6vmin;
+}
+p{
+	font-size: 3.5vmin;
+
+	color: white !important;
+}
+.comDate{
+	/*margin-top: 2.42vmin;*/
+	text-align: right;
+	font-size: 3.5vmin;
+}
+.comLi{
+	border-bottom: 1px solid white; 
+	padding: 3.62vmin;
+	position: relative;
+}
+.comList{
+	
+	
+}
+.textBtn {
+       position: absolute;
+    right: -4vmin;
+    width: 6.9vmin;
+    height: 6.9vmin;
+    /* float: left; */
+    bottom: 0.5vmin;
+    /* margin-left: 4vmin; */
+    display: none;
+    /*background-color: pink;*/
+    /* padding: 2vmin; */
+    /* margin: 4vmin; */
+}
+.imgClass{
+	    width: 2.9vmin;
+    height: 2.9vmin;
+    position: absolute;
+    /* margin: 0 auto; */
+    left: 50%;
+    /* padding: 4vmin; */
+    /*margin-left: -1.45vmin;*/
+    /* top: 50%; */
+    /* margin-top: -1.45vmin; */
+    bottom: 0;
+}
+.contBox{
+	position: relative;
+}
+
+
+
+
+
+

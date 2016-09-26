@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的信息</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/Cloud/addHome.css"/>
+		<style>
+		@media screen and (min-width: 700px) {
+			  
+				.areaBox{
+					height: 70vmin;
+				}
+			}
+			.companylist p:first-of-type input{
+	width: 82%;
+	height: 12vmin;
+    border: none;
+      background-color: rgba(255, 255, 255, 0.502);
+    color: #fff;
+    font-size: 4vmin;
+    padding: 0 4vmin;
+    margin-right: 3vmin;
+	
+}
+.companylist{
+	margin-top: 5vmin;
+}
+.companylist p:first-of-type input+span{
+	font-size: 4vmin;
+}
+.companylist p{
+	text-align: center;
+}
+.companylist .noresult p:nth-child(1){
+	color: #98ccf4;
+	font-size: 4vmin;
+	line-height: 19vmin;
+}
+.companylist p:last-of-type a{
+	    color: #fff;
+    padding: 3vmin 8vmin;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 4vmin;
+}
+.areaListUl li{
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+.areaListUl li:first-of-type{
+	padding:0 0 3.23vmin;
+}
+.areaBoxBody{
+	max-height: 80vmin;
+}
+ .noresult{
+ 	text-align: center;
+ }
+ .noresult p:nth-child(1){
+	color: #98ccf4;
+	font-size: 5vmin;
+	line-height: 19vmin;
+} 
+.noresult p:nth-child(2) a{
+	color: #fff;
+	padding: 1.4vmin 4vmin;
+	border: 1px solid #fff;
+	border-radius: 3vmin;
+	font-size: 4vmin;
+	
+}
+			
+		</style>		
+	</head>
+	<body>
+
+        
+		
+		<div class="bodyBox">
+			
+			<div class="infoBox clearInfoBox">
+								
+				<h2 style="text-align: center;font-weight: normal;">个人信息</h2>
+				<div class="inputBox">
+					<div class="infoNameInp">
+						<label>姓名：</label>
+						<input type="text" class="TextInput" name="" id="" value="" style="margin-left: -3vmin;"/>
+					</div>
+				</div>
+				<div class="inputBox">
+					<div class="infoNameInp">
+						<label>手机号：</label>
+						<input type="text" class="TextInput" name="" id="" value="" style="margin-left: -3vmin;"/>
+					</div>
+				</div>
+				<div class="inputBox">
+					<div class="infoNameInp">
+						<label>身份证：</label>
+						<input type="text" class="TextInput" name="" id="" value="" style="margin-left: -3vmin;"/>
+					</div>
+				</div>
+				<div class="inputBox">
+					
+					<div class="infoNameInp">
+						<div class="BtnLabel">所属公司：</div>
+						<div class="selectBox" onclick="showAreaBox()">
+							<div class="selectCont" id="areaText" >
+								&nbsp;
+							</div>
+							<div class="selectIcon">
+								<img src="../../img/Cloud/jiantou.png" class="imgClass"/>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				
+			
+				
+			</div>
+			
+			
+			
+			<div class="footer">
+					<a href="javascript:;" id="settinginfo">设置信息</a>
+			</div>
+		
+			
+			
+			
+		</div>
+		
+		
+		<!--<div class="eleSubBtnMask" id="">
+			&nbsp;
+		</div>-->
+
+		
+		
+		
+	
+		<!--地区选择框蒙版-->
+		<div class="areaBoxMask" id="areaBoxMask" onclick="hidAreaBox(1)"></div>
+		<!--地区选择框-->
+		<div class="areaBox" id="areaBox">
+			<div class="companylist">
+			<p>
+							<input type="search" id="search" placeholder="请输入公司名称" /><span>搜索</span>
+			</p>
+			</div>
+			
+			<div class="areaBoxBody" >
+				<!--省-->
+				<div class="areaBodyOne areaBodyShow" id="areaBody_1">
+					<div class="noresult">
+							<p>暂无结果</p>
+							<p><a href="#" id="addnewcompany">添加新公司</a></p>	
+					</div>
+					<!--<ul class="areaListUl">
+						
+								<li>1辰鼎巨物业管理有限责任公司</li>
+								<li>2辰鼎巨物业管理有限责任公司</li>
+								<li>3辰鼎巨物业管理有限责任公司</li>
+								<li>辰鼎巨物业管理有限责任公司</li>
+								<li>辰鼎巨物业管理有限责任公司</li>
+								<li>辰鼎巨物业管理有限责任公司</li>
+								<li>辰鼎巨物业管理有限责任公司</li>
+								<li>辰鼎巨物业管理有限责任公司</li>
+								<li>辰鼎巨物业管理有限责任公司</li>
+								<li>辰鼎巨物业管理有限责任公司</li>
+								<li>辰鼎巨物业管理有限责任公司</li>
+								<li>辰鼎巨物业管理有限责任公司</li>
+								<li>辰鼎巨物业管理有限责任公司</li>
+								<li>辰鼎巨物业管理有限责任公司</li>
+								<li>辰鼎巨物业管理有限责任公司</li>
+								<li>辰鼎巨物业管理有限责任公司</li>
+							
+					</ul>-->
+				</div>
+				
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<script src="../../js/jquery-2.1.4.min.js"></script>
+		<script src="../../js/Cloud/myinfo.js"></script>
+		<script>
+			$(function(){
+				$("input:text").attr("readonly", true);
+				$(".infoBox").find(".inputBox:last").find(".selectBox").removeAttr("onclick", "showAreaBox")
+				$("#settinginfo").bind("touchend", function(){
+					$("input:text").attr("readonly", false);
+					$(".infoBox").find(".inputBox:last").find(".selectBox").attr("onclick", "showAreaBox()")
+				})
+			})
+			
+		</script>
+		
+	</body>
+
+</html>

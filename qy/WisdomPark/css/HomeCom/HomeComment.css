@@ -1,0 +1,91 @@
+body{
+	font-family: "微软雅黑";
+	background-color: black;
+}
+
+
+.mui-content {
+     background-color: transparent; 
+    -webkit-overflow-scrolling: touch;
+    z-index: 10;
+    /*width: 96.78vmin;*/
+	
+	min-width: 300px;
+	margin: 0 auto;
+	margin-top: 1vmax;
+	/*margin-left: 1.61%;*/
+	/*height: 99vh;*/
+   
+}
+
+.homeListDiv{
+	position: relative;
+	overflow: hidden;
+	/*width: 98%;*/
+	/*height: 12vmin;*/
+    width: 96.78vmin;
+    min-width: 300px;
+    /*height: 44.28vmin;*/
+ 	background-position:right;
+ 	background: url(../../img/HomeCom/listBgImg.png) no-repeat, -webkit-linear-gradient(right,#d31027,#d31027,#ea384d);
+	background-size:cover;
+	margin: 0 auto;
+	margin-top: 2vmin;
+	border-radius: 1vmin;
+	padding:2.41vmin 3.23vmin ; 
+	color: white;
+}
+
+.listIcon{
+	margin-bottom: 1vmin;
+	font-size: 4.04vmin;
+	height: 6vmin;
+	width: 72.58vmin;
+	padding-right: 12vmin;
+	white-space:nowrap;
+	overflow: hidden;
+}
+.listIcon span{
+	font-size: 5.04vmin;
+}
+.listIcon .Address{
+	font-size: 4.04vmin;
+}
+.listTitle{
+	font-size: 7.26vmin;
+	margin-bottom: 5.24vmin;
+	line-height: 10vmin;
+	 height: 10vmin;
+	 width: 80vmin;
+    overflow: hidden;
+}
+.listDisc{
+	font-size: 3.55vmin;
+	margin-bottom: 7.26vmin;
+	line-height: 5vmin;
+	height: 10vmin;
+	overflow: hidden;
+	text-overflow:ellipsis; 
+}
+.setDiscStyle{
+	
+}
+.listDate{
+	text-align: right;
+	font-size: 2.9vmin;
+}
+.listState{
+    position: absolute;
+    width: 19.35vmin;
+    height: 19.35vmin;
+    border: 1.21vmin solid white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 6vmin;
+    top: -3.5vmin;
+    right: -3vmin;
+    padding-top: 7vmin;
+    margin-right: -10px;
+    -webkit-transform: rotate(45deg);
+    opacity: 0.5;
+}

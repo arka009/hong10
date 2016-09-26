@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>工作走查</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/mui.min.css"/>
+    <link rel="stylesheet" href="../../css/Cloud/HomeComment.css" />
+    <style type="text/css">
+   
+    .mui-content{
+    	background: #000;
+    }
+    .homeListDiv{
+    	background: -webkit-linear-gradient(#35b7ef,#32a0ea,#2c72e1);
+    }
+    .top {
+        height: 8vmin;
+        line-height: 8vmin;
+        border-right: 2px solid #585858;
+        border-bottom: 2px solid #585858;
+        background-color: #1b1a20;
+        padding: 0 5%;
+    }
+    .top p {
+        width: 30%;
+        display: inline-block;
+        text-align: center;
+    }
+    .top a {
+        color: #7c7c7e;
+        font-size: 4vmin;
+    }
+    .top a.active {
+        border-bottom: .25rem solid #fff;
+        padding-bottom: 4px;
+        color: #fff;
+    }
+    .addworking{
+    	border: 3px solid #2b71e0;
+    	background: #262626;
+    	height: 42vmin;
+    	text-align: center;
+    }
+    .addworking p{
+		display: inline-block;
+		text-indent: 4vmin;
+		line-height: 30vmin;
+    }
+    .addworking p:first-of-type{
+    	font-size: 28vmin;
+    }
+    .addworking p:last-of-type{
+    	font-size: 5vmin;
+    	vertical-align: top;
+    	line-height: 33vmin;
+    }
+    #divList{
+    	background: #000;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="pullrefresh" class="mui-content">
+        <div class="mui-scroll" id="divList">
+            <div class="conbox">
+            	<div class="homeListDiv addworking">
+                    <p><span>+</span></p>
+                    <p>添加走查记录</p>
+                </div>
+                <div class="homeListDiv ">
+                    <div class="listIcon"><span class="Address">楼梯间走查</span></div>
+                    <div class="listDisc">
+                        通过对社区物业服务质量的综合评价，端正物业管理企业对物业服务质量内涵端正物业管理企业对物业服务质量内涵
+                    </div>
+                    <div class="listDate">
+                        2016.07.28-2016.08.15
+                    </div>
+                </div>
+                <div class="homeListDiv ">
+                    <div class="listIcon"><span class="Address">楼梯间走查</span></div>
+                    <div class="listDisc">
+                        通过对社区物业服务质量的综合评价，端正物业管理企业对物业服务质量内涵端正物业管理企业对物业服务质量内涵
+                    </div>
+                    <div class="listDate">
+                        2016.07.28-2016.08.15
+                    </div>
+                </div>
+                <div class="homeListDiv ">
+                    <div class="listIcon"><span class="Address">楼梯间走查</span></div>
+                    <div class="listDisc">
+                        通过对社区物业服务质量的综合评价，端正物业管理企业对物业服务质量内涵端正物业管理企业对物业服务质量内涵
+                    </div>
+                    <div class="listDate">
+                        2016.07.28-2016.08.15
+                    </div>
+                </div>
+                <div class="homeListDiv ">
+                    <div class="listIcon"><span class="Address">楼梯间走查</span></div>
+                    <div class="listDisc">
+                        通过对社区物业服务质量的综合评价，端正物业管理企业对物业服务质量内涵端正物业管理企业对物业服务质量内涵
+                    </div>
+                    <div class="listDate">
+                        2016.07.28-2016.08.15
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="../../js/zepto.min.js"></script>
+    <script src="../../js/Cloud/workingcheck.js"></script>
+    <script>
+    	$(".addworking").bind("touchend", function(){
+    		location.href="addworkingcheck.html";
+    	})
+    </script>
+</body>
+
+</html>

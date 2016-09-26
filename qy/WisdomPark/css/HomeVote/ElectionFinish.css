@@ -1,0 +1,29 @@
+  
+.nameLiF{
+ background-image: -webkit-linear-gradient( 0deg, rgb(210,49,68) 0%, rgb(189,14,35) 100%);
+}
+.myEleDiv{
+    position: absolute;
+    right: 3.23vmin;
+    font-size: 3.05vmin;
+    line-height: 4.5vmin;
+    color: white;
+    border: 1px solid white;
+    padding: 1vmin 1.935vmin 1vmin 1.935vmin;
+    border-radius: 1.5vmin;
+    top: 3.032vmin;
+	
+}
+ 
+.eleText {
+    position: relative;
+    padding: 5vmin 2.22vmin;
+    width: 92.33vmin;
+    /* min-width: 300px; */
+    background-image: -webkit-linear-gradient( 0deg, rgb(234,56,77) 0%, rgb(211,16,39) 100%);
+}
+
+.eleBodyBox{
+	border-bottom-left-radius: 2vmin;
+	border-bottom-right-radius: 2vmin;
+}

@@ -1,0 +1,79 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;word-wrap:break-word;color: #fff!important;}
+body,html{background:#000;height: 100%;}
+i,em{font-style: normal;}
+body,html,input{font:12px/1.5 微软雅黑,sans-serif,"microsoft yahei";}
+table{border-collapse:collapse;border-spacing:0;}img{border:none}
+pre {white-space: pre-wrap; /* css-3 */white-space: -moz-pre-wrap; /* Mozilla, since 1999 */white-space: -pre-wrap; /* Opera 4-6 */white-space: -o-pre-wrap; /* Opera 7 */	word-wrap: break-word; /* Internet Explorer 5.5+ */}
+h1,h2,h3,h4,h5,h6{font-size:100%;}input.dialog{height:0; height:0; font-size:0; line-height:0; border:none}
+input,label,img,th{vertical-align:middle;}.font-fixh{font-family:微软雅黑,"microsoft yahei"; color: #f00; font-size: 16px; font-weight: 700;}address,cite,dfn,em,var{font-style:normal;}
+code,kbd,pre,samp{font-family:微软雅黑,"microsoft yahei";}
+input.button ,input.btn{padding:0.25em;width: auto;_width:0;overflow:visible !ie;}
+ul,ol,li{list-style:none;}
+a{text-decoration:none;}
+select optgroup{color:#CAC8BB;}
+header{ display:block}
+h2{
+				font-size: 6vmin;
+				text-align:center;
+				font-weight: normal;
+				padding: 10px 0;
+			}
+/*通用样式*/
+.hidden{display:none;}.invisible{visibility:hidden;}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix{zoom:1;}
+.clearfix:after{content: "";display: block;clear: both;}
+
+.footer{
+  min-width: 300px;
+  width: 96.78vmin;
+  background-color: rgba(27, 26, 32, .4);
+  height: 15vmin;
+  text-align: center;
+  line-height: 15vmin;
+  position: fixed;
+  bottom: 0;
+  z-index: 109;
+  box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.004);
+  border-bottom: 4px solid #000;
+  box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.004);
+}
+.footer a{
+	font-size: 4.12vmin;
+	color: #fff;
+	letter-spacing: 3px;
+}
+
+/*弹出框*/
+.popDiv{
+	position: absolute;
+	width: 61.29vmin;
+	/*padding: 8.06vmin 0 8.06vmin 0;*/
+	height: 19.2vmin;
+	text-align: center;
+	background-color: #000000;
+	opacity: 0.5;
+	border-radius: 2vmin;
+	
+}
+.popMask{
+	position: fixed;
+	display: none;
+	width: 61.29vmin;
+	height: 19.2vmin;
+	z-index: 999;
+	top: 40%;
+	left: 50%;
+	margin-top: -9.6vmin;
+	margin-left: -30.65vmin;
+}
+.textClear{
+	position: absolute;
+	width: 61.29vmin;
+	padding: 7.5vmin 0 8vmin 0;
+	font-size: 3.23vmin;
+	height: 19.2vmin;
+	text-align: center;
+	
+}

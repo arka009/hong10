@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>添加家园</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/Cloud/addHome.css"/>
+		<style type="text/css">
+			.imgText{
+				font-size: 4vmin;
+			}
+			@media screen and (min-width:600px) {
+			   .bodyBox{
+							padding-bottom: 30vmin;
+			        		
+						}
+				.areaBox{
+					height: 70vmin;
+				}
+			}
+		</style>
+			
+	</head>
+
+	<body>
+		<!---->
+        
+		
+		<div class="bodyBox">
+			
+			<div class="infoBox clearInfoBox">
+				<h2>物业公司信息</h2>
+				<div class="inputBox">
+							
+							<div class="infoNameInp">
+								<label>企业名称：</label>
+								<input type="text" class="TextInput" name="" id="" value="" />
+							</div>
+						</div>
+						
+				<div class="inputBox clearBor">
+					<div class="selectBtn btnChecked" id="homeBtn" onclick="selectType(1)">
+						<div class="imgBox imgIcon">
+							<img src="../../img/Cloud/icon_new.png" class="imgClass"/>
+						</div>
+						<div class="imgBox imgText">
+							统一信用代码(新)
+						</div>
+					</div>
+					
+					
+					<div class="selectBtn" id="carBtn" onclick="selectType(2)">
+						<div class="imgBox imgIcon">
+							<img src="../../img/Cloud/icon_new.png" class="imgClass"/>
+						</div>
+						<div class="imgBox imgText">
+							营业执照编号(旧)
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="inputBox">
+					
+						
+						<input type="text" class="TextInput" name="" id="" value="" style="width:80vmin;" placeholder="请填写社会统一信用代码"/>
+					
+				</div>
+				
+				
+				<div class="inputBox">
+					
+					<div class="infoNameInp">
+						<div class="BtnLabel">所属地区：</div>
+						<div class="selectBox" onclick="showAreaBox()">
+							<div class="selectCont" id="areaText" >
+								&nbsp;
+							</div>
+							<div class="selectIcon">
+								<img src="../../img/Cloud/jiantou.png" class="imgClass"/>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+	
+			</div>
+			
+			
+			
+			
+			<div class="footer">
+            		  <a href="javascript:;" id="submitinfo">提交</a>
+        	</div>
+			
+			
+		</div>
+		
+		
+		<div class="eleSubBtnMask" id="eleSubBtn">
+			&nbsp;
+		</div>
+
+		
+		
+		
+	
+		<!--地区选择框蒙版-->
+		<div class="areaBoxMask" id="areaBoxMask" onclick="hidAreaBox(1)"></div>
+		<!--地区选择框-->
+		<div class="areaBox" id="areaBox">
+			<div class="areaBoxTitle">
+				所在地区
+			</div>	
+			<div class="areaBoxTab">
+				<ul class="areaUl">
+					<!--省-->
+					<li typeCode="1" class="selectLi areaUlShow" id="areaBox_1">请选择</li>
+					<!--市-->
+					<li typeCode="2"  id="areaBox_2">请选择</li>
+					<!--区-->
+					<li typeCode="3" id="areaBox_3">请选择</li>
+					<!--街道-->
+					<li  typeCode="4" id="areaBox_4">请选择</li>
+					<!--小区-->
+					<li typeCode="5" id="areaBox_5">请选择</li>
+					
+				</ul>
+			</div>
+			<div class="areaBoxBody" >
+				<!--省-->
+				<div class="areaBodyOne areaBodyShow" id="areaBody_1">
+					<ul class="areaListUl">
+						<li areaCode="1_3123">吉林省</li>
+						<li>北京</li>
+						<li>北京</li>
+						<li>北京</li>
+						<li>北京</li>
+						<li>北京</li>
+						<li>北京</li>
+						<li>北京</li>
+						<li>北京</li>
+						<li>北京</li>
+						<li>北京</li>
+						<li>北京</li>
+						<li>北京</li>
+					</ul>
+				</div>
+				<!--市-->
+				<div class="areaBodyOne" id="areaBody_2">
+					<ul class="areaListUl">
+						<li areaCode="2_3123">长春市</li>
+						<li>北京2</li>
+						<li>北京2</li>
+						<li>北京2</li>
+						<li>北京2</li>
+						<li>北京2</li>
+						<li>北京2</li>
+						<li>北京2</li>
+						<li>北京2</li>
+						<li>北京2</li>
+					</ul>
+				</div>
+				
+				<!--区-->
+				<div class="areaBodyOne" id="areaBody_3">
+					<ul class="areaListUl">
+						<li areaCode="3_3123">莲花乡</li>
+						<li>北京3</li>
+						<li>北京3</li>
+						<li>北京3</li> 
+						<li>北京3</li>
+						<li>北京3</li>
+						<li>北京3</li>
+						<li>北京3</li>
+						<li>北京3</li>
+						<li>北京3</li>
+						<li>北京3</li>
+						
+					</ul>
+				</div>
+				<!--街道-->
+				<div class="areaBodyOne" id="areaBody_4">
+					<ul class="areaListUl">
+						<li areaCode="4_3123">池水沟子</li>
+						<li>北京4</li>
+						<li>北京4</li>
+						<li>北京4</li>
+						<li>北京4</li>
+						<li>北京4</li>
+						<li>北京4</li>
+						<li>北京4</li>
+						<li>北京4</li>
+						<li>北京4</li>
+						<li>北京4</li>
+						
+					</ul>
+				</div>
+				<!--小区-->
+				<div class="areaBodyOne" id="areaBody_5">
+					<ul class="areaListUl">
+						<li areaCode="5_3123">莲花乡小区一期A区14座1203B室</li>
+						<li>北京5</li>
+						<li>北京5</li>
+						<li>北京5</li>
+						<li>北京5</li>
+						<li>北京5</li>
+						<li>北京5</li>
+						<li>北京5</li>
+						<li>北京5</li>
+						<li>北京5</li>
+						<li>北京5</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		<!--身份选择框蒙版-->
+		<div class="areaBoxMask" id="peopleBoxMask" onclick="hidPeopleBox()"></div>
+		<!--身份选择框-->
+		<div class="peopleBox" id="peopleBox">
+			<div class="areaBoxTitle peopleBor">
+				身份
+			</div>	
+			<div class="peopleSelectBox">
+				<div class="peopleLi">
+					业主
+				</div>
+				<div class="peopleLi">
+					家属
+				</div>
+				<div class="peopleLi">
+					租户
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		<script src="../../js/jquery-2.1.4.min.js"></script>
+		<script src="../../js/Cloud/public.js"></script>
+		<script src="../../js/Cloud/common.js"></script>
+		<script src="../../js/Cloud/addcompany.js"></script>
+		<script>
+		$(function(){
+			var regCreditCode = /^[A-Za-z0-9]+$/;
+		
+			$("#submitinfo").bind("touchend", function(){
+				if($(".TextInput").eq(0).val() == ""){
+						popText("请填写姓名");
+				}else if($(".TextInput").eq(1).val() == "" &&  ($(".TextInput").eq(1).attr("placeholder") == "请填写社会统一信用代码") ){
+						popText("请填写统一信用代码");
+				}else if($(".TextInput").eq(1).val() == "" &&  ($(".TextInput").eq(1).attr("placeholder") == "请填写营业执照编码") ){
+						popText("请填写营业执照编码");
+				}else if(regCreditCode.test( $(".TextInput").eq(1).val())== false){
+						popText("请正确的信用代码");
+				}else if(String.prototype.Trim.call($("#areaText").text()) == ""){
+						popText("请选择所属地区");
+				}else{
+					location.href = 'submitedsuccess.html';
+				}
+			});
+			
+		})
+		</script>		
+	</body>
+
+</html>
